@@ -1,0 +1,3 @@
+Uri file = Uri.fromFile(new File(getPath(data.getData())));
+            StorageReference riversRef = storageRef.child("images/"+file.getLastPathSegment());
+            UploadTask uploadTask = riversRef.putFile(file);
